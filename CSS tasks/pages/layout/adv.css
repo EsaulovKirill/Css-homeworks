@@ -1,0 +1,27 @@
+.menu__adv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-image: url(./src/background-colored.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    gap: 8px;
+    padding: 30px;
+    color: #fff;
+}
+
+.menu__adv--button {
+    color: #5D5FEF;
+    font-family: Gilroy-bold, sans-serif;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.menu__adv--button:hover {
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+}

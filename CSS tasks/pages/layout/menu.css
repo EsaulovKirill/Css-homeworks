@@ -1,0 +1,122 @@
+.menu {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu__title {
+  margin-bottom: 50px;
+  font-family: Gilroy-bold, serif;
+  font-size: 30px;
+}
+
+.menu__title::before {
+  content: "";
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-image: url(./src/svgs/title-logo-icon.svg);
+  margin-right: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  color: #737791;
+  position: relative;
+}
+
+.menu__item {
+  padding: 20px;
+  text-align: left;
+}
+
+.menu__item:hover {
+  background-color: #5d5fef;
+  color: #fff;
+  font-weight: 900;
+  border-radius: 16px;
+  transition-duration: 0.3s;
+}
+
+.menu__item::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.menu__item_dashboard::before {
+  background-image: url(./src/svgs/Dashboard-icon-lite.svg);
+}
+
+.menu__item_dashboard:hover:before {
+  background-image: url(./src/colored-svg/Dashboard-icon.svg);
+}
+
+.menu__item_leaderboard::before {
+  background-image: url(./src/svgs/leaderboard-icon.svg);
+}
+
+.menu__item_leaderboard:hover::before {
+  background-image: url(./src/colored-svg/leaderboard-icon-light.svg);
+}
+
+.menu__item_order::before {
+  background-image: url(./src/svgs/order-icon.svg);
+}
+
+.menu__item_order:hover::before {
+  background-image: url(./src/colored-svg/order-icon-lite.svg);
+}
+
+.menu__item_products::before {
+  background-image: url(./src/svgs/products-icon.svg);
+}
+
+.menu__item_products:hover::before {
+  background-image: url(./src/colored-svg/products-icon-lite.svg);
+}
+
+.menu__item_report::before {
+  background-image: url(./src/svgs/sales-report-icon.svg);
+}
+
+.menu__item_report:hover::before {
+  background-image: url(./src/colored-svg/sales-report-icon-lite.svg);
+}
+
+.menu__item_messages::before {
+  background-image: url(./src/svgs/messages-icon.svg);
+}
+
+.menu__item_messages:hover::before {
+  background-image: url(./src/colored-svg/messages-icon-lite.svg);
+}
+
+.menu__item_settings::before {
+  background-image: url(./src/svgs/settings-icon.svg);
+}
+
+.menu__item_settings:hover::before {
+  background-image: url(./src/colored-svg/settings-icon-lite.svg);
+}
+
+.menu__item_sign-out::before {
+  background-image: url(./src/svgs/sign-out-icon.svg);
+}
+
+.menu__item_sign-out:hover::before {
+  background-image: url(./src/colored-svg/sign-out-icon-lite.svg);
+}

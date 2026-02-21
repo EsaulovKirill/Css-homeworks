@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/norm.css" />
+    <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="./header-layout.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./adv.css" />
+    <title>Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__title">
+          <h1 class="header__title--item">Dashboard</h1>
+        </div>
+        <div class="header__actions">
+          <div class="header__search_wrapper">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search here..."
+              class="header__search"
+            />
+          </div>
+          <div class="header__lang-switch">
+            <select name="language" id="lang" class="header__actions--lang">
+              <option value="Eng" class="opt_en" aria-label="English">
+                Eng (US)
+              </option>
+              <option value="Ru" class="opt_ru" aria-label="Russian">ru</option>
+              <option value="De" class="opt_de" aria-label="Germany">De</option>
+              <option value="Fr" class="opt_fr" aria-label="Franch">Fr</option>
+            </select>
+          </div>
+          <div class="header__actions--right-side">
+            <button
+              type="button"
+              class="header__actions--notification"
+            ></button>
+            <div class="header__actions--user">
+              <img
+                src="./src/user-jpeg.jpg"
+                alt="user-photo"
+                class="user-img"
+                width="60px"
+              />
+              <div class="header__actions--user-data">
+                <p class="username">User Name</p>
+                <p class="user-post">Admin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="menu">
+        <div class="menu__section">
+          <a href="#"><h2 class="menu__title">Dabang</h2></a>
+          <ul class="menu__list">
+            <li class="menu__item menu__item_dashboard">Dashboard</li>
+            <li class="menu__item menu__item_leaderboard">Leaderboard</li>
+            <li class="menu__item menu__item_order">Order</li>
+            <li class="menu__item menu__item_products">Products</li>
+            <li class="menu__item menu__item_report">Sales Report</li>
+            <li class="menu__item menu__item_messages">Messages</li>
+            <li class="menu__item menu__item_settings">Settings</li>
+            <li class="menu__item menu__item_sign-out">Sign Out</li>
+          </ul>
+        </div>
+        <div class="menu__adv">
+          <img src="./src/svgs/logo-adv.svg" alt="dabang-logo-lite" />
+          <h2 class="menu__adv--title">Dabang Pro</h2>
+          <p class="menu__adv--text">Get access to all features on tetumbas</p>
+          <button class="button menu__adv--button">Get Pro</button>
+        </div>
+      </section>
+      <main>
+        <section class="lorem">
+          <dl class="readme">
+            <h3>В этом задании я реализовал</h3>
+            <dt>Display:grid</dt>
+            <dd>
+              Основной контейнер сделан гридами для удобства позиционирования, а
+              также для избежания жестких размеров элементов
+            </dd>
+
+            <dt>Использование псевдоэлементов и псевдоклассов</dt>
+
+            <dd>Почти все иконки сделаны псевдоэлементами</dd>
+
+            <dt>Замена SVG при :hover</dt>
+
+            <dd>
+              В макете явно указано (на мой взгляд), что выделенное меню
+              "Dashboard" является не статически стилизованным элементом, а
+              демонстрацией :hover. Так же столкнулся с проблемой плохого
+              контраста SVG иконок, поэтому при :hover заменил иконки на светлые
+            </dd>
+
+            <dt>Менюшка рекламы PRO версии</dt>
+
+            <dd>
+              В макете фоновое изображение реализовано с помощью трех элементов.
+              Пройдя по пути наименьшего сопротивления я скрестил эти элементы в
+              фотошопе и вставил готовый вариант
+            </dd>
+
+            <dt>Особенности работы с псевдоэлементами в инпутах</dt>
+
+            <dd>Сделал обертки инпутов для работы с псевдоэлементами</dd>
+
+            <dt>Адаптивность</dt>
+
+            <dd>
+              Не реализовал mobile версию из-за её отсутствия в макете, но
+              благодаря grid макет выглядит нормально при увеличении разрешения
+            </dd>
+
+            <dt>Прилепил хэдер position:sticky</dt>
+
+            <dd>
+              Чтобы при развитии этого макета и добавления новых материалов
+              хэдер был всегда сверху, чтобы юзер всегда имел доступ к нему
+            </dd>
+          </dl>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
